@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+<<<<<<< HEAD
 import DiamonShop.Dao.CategorysDao;
 import DiamonShop.Dao.MenuDao;
 import DiamonShop.Dao.ProductsDao;
@@ -40,6 +41,17 @@ public class HomeServiceImpl implements IHomeService{
 		List<ProductsDto> listProducts = productsDao.GetDataProducts();
 		listProducts.get(0).getId_color();
 		return listProducts;
+=======
+import DiamonShop.Dao.SlidesDao;
+import DiamonShop.Entity.Slides;
+@Service
+public class HomeServiceImpl implements IHomeService{
+	@Autowired
+	private SlidesDao slidesDao;
+	
+	public List<Slides> GetDataSlide() {
+		return slidesDao.GetDataSlide();
+>>>>>>> branch 'master' of https://github.com/DHMaiKhanhdeveloper/ShopMVC.git
 	}
 
 }

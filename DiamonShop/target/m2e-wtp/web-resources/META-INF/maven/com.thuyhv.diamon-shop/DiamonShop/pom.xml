@@ -65,6 +65,7 @@
 			<version>1.2</version>
 		</dependency>
 
+<<<<<<< HEAD
 		<!-- annotation-api -->
 		<dependency>
 			<groupId>javax.annotation</groupId>
@@ -73,6 +74,8 @@
 		</dependency>
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/DHMaiKhanhdeveloper/ShopMVC.git
 	</dependencies>
 
 </project>

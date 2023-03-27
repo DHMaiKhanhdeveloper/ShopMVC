@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator"
 	prefix="decorator"%>
+<<<<<<< HEAD
 <%@include file="/WEB-INF/views/layouts/user/taglib.jsp" %>
 
 <!DOCTYPE html>
@@ -45,6 +46,50 @@
 						Contact us</a> <a href="<c:url value="/gio-hang"/>"><span
 						class="icon-shopping-cart"></span> ${ TotalQuantyCart } Sản phẩm - <span
 						class="badge badge-warning"><fmt:formatNumber type="number" groupingUsed="true" value="${ TotalPriceCart }"/> ₫</span></a>
+=======
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><decorator:title default="Master-layout"/></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Bootstrap styles -->
+<link href="<c:url value="/assets/user/css/bootstrap.css" />" rel="stylesheet" />
+<!-- Customize styles -->
+<link href="<c:url value="/assets/user/style.css" />" rel="stylesheet" />
+<!-- font awesome styles -->
+<link href="<c:url value="/assets/user/font-awesome/css/font-awesome.css" />" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="<c:url value="/assets/user/ico/favicon.ico" />">
+</head>
+<body>
+	<!-- 
+	Upper Header Section 
+-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="topNav">
+			<div class="container">
+				<div class="alignR">
+					<div class="pull-left socialNw">
+						<a href="#"><span class="icon-twitter"></span></a> <a href="#"><span
+							class="icon-facebook"></span></a> <a href="#"><span
+							class="icon-youtube"></span></a> <a href="#"><span
+							class="icon-tumblr"></span></a>
+					</div>
+					<a class="active" href="index.html"> <span class="icon-home"></span>
+						Home
+					</a> <a href="#"><span class="icon-user"></span> My Account</a> <a
+						href="register.html"><span class="icon-edit"></span> Free
+						Register </a> <a href="contact.html"><span class="icon-envelope"></span>
+						Contact us</a> <a href="cart.html"><span
+						class="icon-shopping-cart"></span> 2 Item(s) - <span
+						class="badge badge-warning"> $448.42</span></a>
+>>>>>>> branch 'master' of https://github.com/DHMaiKhanhdeveloper/ShopMVC.git
 				</div>
 			</div>
 		</div>
